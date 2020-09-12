@@ -78,7 +78,7 @@ footer {
     border-bottom: solid 2px #999999;
 }
 
-.contact-list > section:last-of-type {
+.contact-list > article:last-of-type {
     border-bottom: none;
     padding-bottom: 20px;
 }

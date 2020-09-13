@@ -44,6 +44,12 @@ footer {
     margin: 0;
 }
 
+nav a.selected {
+    color: #727171;
+    font-weight: bold;
+}
+
+
 /* Home*************************************** */
 
 .banner img {
@@ -120,7 +126,7 @@ footer {
 }
 
 .flex-item button {
-    background-color:rgb(245, 48, 48);
+    background-color: #727171;
     color: white;
     border: none;
     width: 70px;

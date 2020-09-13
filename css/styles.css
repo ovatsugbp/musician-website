@@ -36,7 +36,6 @@ header ul li a {
     color: #555555;
 }
 
-
 footer {
     background-color: #d1d1d1;
     text-align: center;
@@ -66,16 +65,71 @@ footer {
 
 /* Contact *********************************** */
 
+.contact-form {
+    margin-left: 200px;
+    margin-right: 200px;
+    border-bottom: solid 2px #999999;
+    padding-bottom: 20px;
+}
+
 .contact h2 {
     margin-top: 200px;
     margin-left: 200px;
     font-size: 1.5rem;
+}
+.userconfig input {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 25px;
+    padding: 1px;
+}
+
+.userconfig textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    resize: none;
+}
+
+
+.socialconfig {
+    margin-bottom: 20px;
+}
+
+.newsletter-config {
+    margin-bottom: 20px;
 }
 
 .contact-list .contact-item {
     margin-left: 200px;
     margin-right: 200px;
     border-bottom: solid 2px #999999;
+}
+
+.flex-container {
+    display: flex;
+    border-bottom: solid 2px #999999;
+    margin: 10px 200px 0 200px;
+    padding-bottom: 50px;
+    
+}
+
+.flex-item {
+    flex: 1 1 100%;
+    padding-right: 0;
+}
+
+.flex-item button {
+    background-color:rgb(245, 48, 48);
+    color: white;
+    border: none;
+    width: 70px;
+    height: 25px;
+}
+
+
+#userdata{
+    padding-right: 30px;
 }
 
 .contact-list > article:last-of-type {

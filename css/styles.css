@@ -37,6 +37,7 @@ header ul li a {
 }
 
 footer {
+
     background-color: #d1d1d1;
     text-align: center;
     width: 100%;
@@ -53,34 +54,65 @@ nav a.selected {
 /* Home*************************************** */
 
 .banner img {
-    width: 100%;
+
+    width: 100vw;
+    max-width: 100%;
     vertical-align: bottom;
+
     
+}
+
+.concept {
+    width: 60%;
+    margin: 0 auto
+}
+
+.externals img{
+    width: 40vw;
+}
+
+.externals {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.externals-items ol{
+    padding-top: 4em;
+}
+.youtube {
+    text-decoration: none;
+    color: #727171;
+    font-weight: bold;
 }
 
 /* About *********************************** */
 
 .about-content {
-    margin: 200px 200px 50px 200px;
+    width: 40%;
+    font-size: .9em;
+    margin: 10em auto 5em;
     text-align: center;
+    align-content: center;
 }
 
 .about-content img {
-    width: 400px;
+    width: 70%;
 }
 
 /* Contact *********************************** */
 
+.contact {
+    margin: 12em 9rem 4em;
+}
+
 .contact-form {
-    margin-left: 200px;
-    margin-right: 200px;
     border-bottom: solid 2px #999999;
     padding-bottom: 20px;
 }
 
 .contact h2 {
-    margin-top: 200px;
-    margin-left: 200px;
     font-size: 1.5rem;
 }
 .userconfig input {
@@ -107,23 +139,26 @@ nav a.selected {
 }
 
 .contact-list .contact-item {
-    margin-left: 200px;
-    margin-right: 200px;
+
     border-bottom: solid 2px #999999;
 }
 
 .flex-container {
     display: flex;
     border-bottom: solid 2px #999999;
-    margin: 10px 200px 0 200px;
+
     padding-bottom: 50px;
+
     
 }
 
 .flex-item {
-    flex: 1 1 100%;
+    /* flex: 1 1 100%; */
+    align-content: space-between;
     padding-right: 0;
+
 }
+
 
 .flex-item button {
     background-color: #727171;
@@ -146,10 +181,109 @@ nav a.selected {
 /* Music *********************************** */
 
 .music {
-    margin-top: 200px;
-    margin-left: 200px;
+    margin: 10em 10em 5em;
+
 }
 
 .music-item iframe {
     width: 600px;
+}
+
+/* Media query *********************************** */
+
+@media (max-width: 1160px) {
+    .about-content {
+        margin: 12em auto 7em;
+    }
+
+    .music-item iframe {
+        width: 30em;
+        height: 20em;
+    }
+    
+    .map iframe {
+        width: 100%;
+        height: 90%;
+    }
+    .contact {
+        margin: 12em 7em 4em;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .externals {
+        display: block;
+        padding-top: 0;;
+    }
+    .about-content {
+        width: 70%;
+    }
+    .music-item iframe {
+        width: 22em;
+        height: 15em;
+    }
+    .music {
+        margin: 10em 5em 3em;    
+    }
+    .flex-container {
+        display: block;
+    }
+    .map iframe {
+        margin-top: 2em;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .banner img {
+        margin-top: 7em;
+    }
+
+    .externals img{
+        width: 100%;
+    }
+    .externals-items ol{
+        padding-top: 0;
+    }
+    .about-content {
+        font-size: 1.1em;
+        margin: 15em auto 6em;;
+    }
+    .music-item {
+        font-size: .9em;
+    }
+    .music-item iframe {
+        width: 19em;
+        height: 12em;
+    }
+    .music {
+        margin: 10em 3em 3em;
+    
+    }
+    .contact {
+        margin: 12em 5em 3em;
+    }
+
+}
+
+@media (max-width: 400px) {
+    header ul li a {
+        font-size: .6em;
+    }
+    .about-content {
+        font-size: 1.1em;
+        width: 90%;
+        margin: 12em auto 5em;
+    }
+    .about-content img {
+        width: 90%;
+    }
+    .music {
+        margin: 10em 1em 3em;    
+    }
+    .contact {
+        margin: 12em 3em 1em;
+    }
+
 }

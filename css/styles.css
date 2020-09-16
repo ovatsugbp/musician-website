@@ -272,18 +272,18 @@ nav a.selected {
         font-size: .6em;
     }
     .about-content {
-        font-size: 1.1em;
+        font-size: 1.3em;
         width: 90%;
-        margin: 12em auto 5em;
+        margin: 9em auto 2em;
     }
     .about-content img {
         width: 90%;
     }
     .music {
-        margin: 10em 1em 3em;    
+        margin: 10em 1em 1em;    
     }
     .contact {
-        margin: 12em 3em 1em;
+        margin: 10em 3em 1em;
     }
 
 }
